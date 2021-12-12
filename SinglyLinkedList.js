@@ -74,11 +74,11 @@ class SinglyLinkedList{
 
     }
 
-    remove(){
+    remove(){  //remove from the tail
         if(this.tail){
            this.length--;
 
-           while(this.head !== this.tail){
+           while(this.head !== this.tail){ //the while loop will iterate until the node next to the tail is found.
                this.head = this.head.next;
 
            }
@@ -92,6 +92,16 @@ class SinglyLinkedList{
         return undefined;
 
 
+    }
+    
+    removeFromHead(){
+    if (this.head) {
+    this.length--;
+    const remove = this.head;
+    this.head = this.head.next;
+    return remove;
+  }
+  return undefined;
     }
 
 
