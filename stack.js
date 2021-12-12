@@ -1,8 +1,9 @@
 /** Implementing a Stack
  * 
  * A Stack is a data structure based on the LIFO ( Last In First Out) principle. The  last node to go in is the first to go out.
- * This of a stack of documents or a deck of cards. The push() method adds a node (document/card) to the stack and the pop() method removes the
- * it.
+ * This of a stack of documents or a deck of cards. The push() method adds a node (document/card) to the stack and the pop() method removes the node (document/card)
+ from the top of the stack.
+
  * 
  * The time complexity for both push() and pop() remain O(1).
  */
