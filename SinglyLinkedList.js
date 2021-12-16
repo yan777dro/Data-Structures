@@ -98,7 +98,7 @@ class SinglyLinkedList{
     if (this.head) {
     this.length--;
     const remove = this.head;
-    remove = this.head.next;
+    this.head =  this.head.next;
     return remove;
   }
   return undefined;
