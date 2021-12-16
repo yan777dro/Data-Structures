@@ -46,14 +46,14 @@ class Stack{
 
     pop() {
         if (!this.first) return null;
-        let temp = this.first;
+        let node = this.first;
         if (this.first === this.last) {
           this.last = null;
         }
         this.first = this.first.next;
         this.size--;
 
-        return temp.value;
+        return node.value;
       }
 
 }
